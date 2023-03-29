@@ -1,0 +1,67 @@
+#sinUp-page{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.542);
+    border-radius: 20px;
+    padding: 25px 30px;
+    animation-name: signUp_name;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+}
+@keyframes signUp_name{
+    0%{
+        height: 0px;
+        width: 0px;
+    }
+    100%{
+        height: 800px;
+        width: 600px;
+    }
+}
+/* User Input */
+.field{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.field input{
+    outline: none;
+    height: 35px;
+    width: 320px;
+    margin: 10px auto;
+    padding: 8px 20px;
+    text-align: center;
+    background: transparent;
+    border-bottom:5px solid var(--primary-color) ;
+    border-top: 5px solid var(--primary-color);
+    border-left: none;
+    border-right: none;
+    border-radius: 50%;
+    cursor: default;
+    color: var(--primary-color);
+    transition: all 0.2s linear 0s;
+    font-size: 1.2rem;
+}
+.field input::placeholder{
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+.field input:focus{
+    border: 5px solid var(--primary-color);
+    border-radius: 10px;
+    color: var(--secondary-color);
+    background: var(--primary-color);
+}
+/* Swap Login */
+#back-to-login{
+    width: 100%;
+}
+#left-arrow{
+    position: relative;
+    left: 25px;
+}

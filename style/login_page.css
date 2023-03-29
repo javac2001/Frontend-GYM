@@ -1,0 +1,72 @@
+#login-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.542);
+    border-radius: 20px;
+    padding: 25px 30px;
+    animation-name: login_name;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+}
+@keyframes login_name{
+    0%{
+        height: 0px;
+        width: 0px;
+    }
+    100%{
+        height: 600px;
+        width: 600px;
+    }
+}
+/* HEADING */
+#heading-one{
+    color: #fff;
+    margin-bottom: 30px;
+    font-family: var(--heading-one);
+    font-size: 4rem;
+    margin-bottom: 15px;
+}
+#heading-two{
+    color: #fff;
+    font-family: var(--heading-two);
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+/* USERNAME and PASSWORD */
+.login-system input{
+    width: 300px;
+    height: 40px;
+    margin: 10px auto;
+    padding: 20px;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out 0s;
+    background: rgb(67, 66, 66);
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: default;
+}
+.login-system input::placeholder{
+    color: #fff;
+}
+.login-system input:focus{
+    width: 350px;
+    color: var(--primary-color);
+    background: var(--secondary-color);
+    border: 2px solid var(--primary-color);
+}
+
+/* FORGOT */
+#forgot{
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin: 2px 2px;
+    cursor: pointer;
+}

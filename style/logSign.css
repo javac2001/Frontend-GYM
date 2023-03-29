@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Raleway&family=Roboto+Mono&family=Chakra+Petch&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --heading-one: 'Roboto Mono', monospace;
+    --heading-two: 'Raleway', sans-serif;
+    --all-fonts: 'Nunito', sans-serif;
+    --primary-color: #fff;
+    --secondary-color:#1a1919;
+    --warning-fonts: 'Chakra Petch', sans-serif;
+    --worning-color: rgb(24, 195, 207);
+}
+body::before{
+    content: "";
+    z-index: -1;
+    opacity: 0.8;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background: url('../image/gym-login-signup-page.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.container{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    margin: 20px 0px;
+    font-family: var(--all-fonts);
+    font-size: 1.3rem;
+    outline: none;
+    border: none;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out 0s;
+    text-decoration: none;
+}
+.btn:hover{
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+.Error{
+    display: block;
+    visibility: hidden;
+    margin: 5px 0px;
+    color: var(--worning-color);
+    font-size: 1.1rem;
+    font-weight: 900;
+    font-family: var(--warning-fonts);
+}

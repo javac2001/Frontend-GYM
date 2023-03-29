@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/logSign.css">
+    <link rel="stylesheet" href="../style/login_page.css">
+    <link rel="stylesheet" href="../style/signUp_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <title>LOGIN||SIGNUP</title>
+</head>
+<body>
+    <div class="container">
+        <!------------------ LOGIN ------------------>
+        <div id="login-box">
+            <!-- Heading -->
+            <h2 id="heading-one" class="heading">LOGIN</h2>
+            <h3 id="heading-two" class="heading">Please enter your Username and password</h3>
+
+            <!-- USERNAME -->
+            <div class="login-system" id="username">
+                <input type="text" placeholder="USERNAME" value="">
+                <span class="Error">Error massage</span>
+            </div>
+
+            <!-- PASSWORD -->
+            <div class="login-system" id="password">
+                <input type="password" placeholder="PASSWORD" value="">
+                <span class="Error">Error massage</span>
+            </div>
+
+            <!-- FORGOT -->
+            <a href="#" id="forgot">Forgot password ?</a>
+
+            <!-- LOGIN BUTTON -->
+            <input type="button" value="Login" id="log-btn" class="btn">
+
+            <!-- SignUP page -->
+            <a href="#" id="signUp" class="btn" onclick="signUp()">Create your new account</a>
+        </div>
+        <!------------------ SIGNUP ------------------>
+        <div id="sinUp-page">
+            <h2 id="heading-one" class="heading">SIGNUP</h2>
+            <!-- Username -->
+            <div class="field" id="username">
+                <input type="text" placeholder="Username" value="">
+                <span class="Error">Error massage</span>
+            </div>
+            <!-- First name -->
+            <div class="field" id="first-name">
+                <input type="text" placeholder="First name" value="">
+                <span class="Error">Error massage</span>
+            </div>
+            <!-- last name -->
+            <div class="field" id="last-name">
+                <input type="text" placeholder="Last name" value="">
+                <span class="Error">Error massage</span>
+            </div>
+            <!-- Email -->
+            <div class="field" id="email">
+                <input type="text" placeholder="Email" value="">
+                <span class="Error">Error massage</span>
+            </div>
+            <!-- Password -->
+            <div class="field" id="password">
+                <input type="password" placeholder="Password" value="">
+                <span class="Error">Error massage</span>
+
+            </div>
+            <!-- Confirm Password -->
+            <div class="field" id="confirm-password">
+                <input type="password" placeholder="Confirm Password" value="">
+                <span class="Error">Error massage</span>
+            </div>
+            <!-- Create Buttonm -->
+            <input type="button" value="Create" class="btn" onclick="submit()">
+            <!-- Swap login -->
+            <div id="back-to-login">
+                <i class="fa-sharp fa-solid fa-arrow-left" id="left-arrow"></i>
+                <input type="button" value="Back to Login" id="swap-login" class="btn" onclick="swapPage()">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/loginPage.js"></script>
+<script src="../js/signUpPage.js"></script>
+<script src="../js/swapPage.js"></script>
+</html>
